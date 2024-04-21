@@ -1,0 +1,32 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "data": {
+            "IP": "Controller IP"
+          },
+          "data_description": {
+            "IP": "IP address of the esp device doing sprinkler control"
+          },
+          "description": "Please enter the Sprinkler Controller information",
+          "title": "SprinklerControl setup"
+        },
+        "reauth_confirm": {
+          "data": {
+            "username": "[%key:common::config_flow::data::username%]",
+            "password": "[%key:common::config_flow::data::password%]"
+          }
+        }
+      },
+      "error": {
+        "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+        "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+        "unknown": "[%key:common::config_flow::error::unknown%]",
+        "reauth_invalid": "Re-authentication failed; Serial Number does not match original"
+      },
+      "abort": {
+        "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+        "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]"
+      }
+    }
+  }
